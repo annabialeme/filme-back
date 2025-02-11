@@ -28,8 +28,8 @@ const router = {
 
     getAllMovie: (req, res) => {
         try {
-            const Moviess = lista.getAllMoviess();
-            res.status(200).json(Moviess);
+            const Movie = lista.getAllMovie();
+            res.status(200).json(Movie);
         } catch (error) {
             res.status(404).json({
                 message: "Erro ao buscar filmes",
@@ -63,11 +63,11 @@ const router = {
 
     deleteMovie: (req, res) => {
         try {
-            const Movies = req.params.id;
-            lista.deleteMovie(Movies);
+            const Movie = req.params.id;
+            lista.deleteMovie(Movie);
             res.status(200).json({
                 message: "Filme deletado com sucesso",
-                Movies,
+                Movie,
             });
         } catch (error) {
             res.status(404).json({
