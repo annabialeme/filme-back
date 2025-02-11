@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Movies>
+
 <Movie>
 <Diretor>Susan Johnson</Diretor>
 <Duracao>1:39m</Duracao>
 <Titulo>Para todos os garotos que já amei</Titulo>
+</Movie>
+
 <Movie>
+<Diretor>Will Gluck</Diretor>
+<Duracao>1:43m</Duracao>
+<Titulo>Todos menos você</Titulo>
+</Movie>
+
 </Movies>
