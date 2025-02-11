@@ -15,7 +15,7 @@ const router = {
             if (!diretor || !duracao || !titulo) {
                 throw new Error("Preencha todos os campos!");
             }
-            const movie = new Movies(title, duracao, titulo, plays);
+            const movie = new Movies(diretor, duracao, titulo, plays);
             lista.addMovies(movie);
             res.status(200).json({ message: "Criado com sucesso", movie });
         } catch (error) {
